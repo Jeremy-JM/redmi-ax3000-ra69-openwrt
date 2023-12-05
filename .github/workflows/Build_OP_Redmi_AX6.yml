@@ -151,14 +151,14 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-Redmi-AX6")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-redmi-ra69")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "红米 AX6 自用精简 Openwrt：" >> release.txt
-        echo "默认系统后台：192.168.123.1" >> release.txt
+        echo "默认系统后台：10.0.0.1" >> release.txt
         echo "账号：root" >> release.txt
         echo "密码：password" >> release.txt
         echo "编译的源码取自：https://github.com/coolsnowwolf/lede" >> release.txt
-        echo "集成插件：ssr plus、TTYD 终端" >> release.txt
+        echo "集成插件：ssr plus、TTYD 终端、upnp、多播、ddnsto" >> release.txt
         echo "默认主题：Argon" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
     - name: Upload firmware to release
