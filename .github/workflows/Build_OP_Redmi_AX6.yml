@@ -10,6 +10,9 @@
 
 name: Build Redmi AX6
 
+permissions:
+  contents: write
+
 on: 
   release:
     types: [published]
@@ -42,8 +45,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    permissions:
-      contents: write
 
     steps:
     - name: Checkout
