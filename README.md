@@ -11,7 +11,7 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 
 Main compiled router firmware: Redmi AX6, Xiaomi CR660X
 
-Default Web Admin IP: `192.168.123.1`, username `root`, username `password`, theme: argon
+Default Web Admin IP: `10.0.0.1`, username `root`, username `password`, theme: argon
 
 ## Usage
 
